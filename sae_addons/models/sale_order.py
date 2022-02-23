@@ -6,8 +6,6 @@ from odoo.exceptions import ValidationError
 
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
-    
-    test = fields.Char('TEst')
 
     def _action_confirm(self):
         for rec in self:
