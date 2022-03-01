@@ -8,8 +8,8 @@ class CodeNaf(models.Model):
     _rec_name = 'x_studio_code'
     
     def name_get(self):
-    result = []
-    for rec in self:
-        if rec.x_studio_code:
-            result.append((rec.id, rec.x_studio_code))
-    return result
+        result = []
+        for rec in self:
+            if rec.x_studio_code:
+                result.append((rec.id, rec.x_studio_code))
+        return result
